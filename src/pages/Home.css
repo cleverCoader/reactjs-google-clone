@@ -37,3 +37,22 @@
 .headerRight_icons{
     margin-left: 10px;
 }
+
+/* body section of google-home */
+
+.home_body{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 10%;
+    /* background-color: rgb(223, 219, 162); */
+}
+
+.home_body >img {
+    height: 100px;
+    object-fit: contain;
+}
+
+/* .home_languages{
+    text-align: center;
+} */
