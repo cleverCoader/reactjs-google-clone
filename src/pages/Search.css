@@ -1,6 +1,6 @@
-.search{
+/* .search{
     
-}
+} */
 
 .search_input{
     display: flex;
@@ -12,7 +12,7 @@
     width: 75vw;
     margin: 0 auto;
     margin-top: 40px;
-    max-width: 560px;
+    max-width: 600px;
 }
 
 .search_input > input{
