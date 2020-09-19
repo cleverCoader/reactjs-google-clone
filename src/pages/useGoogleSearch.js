@@ -1,7 +1,7 @@
 import {useState, useEffect}  from 'react'
 import API_KEY from "./keys";
 
-const CONTEXT_KEY = "c12d73f5d356cd2a2";
+const CONTEXT_KEY = "b14b2c09509d28170";
 
 const useGoogleSearch = (term) => {
     const [data, setData] = useState(null);
@@ -10,10 +10,7 @@ const useGoogleSearch = (term) => {
     useEffect(() => {
 
         const fetchData = async () => {
-            fetch(
-                `https://developers.google.com/custom-search/v1?key=
-                ${API_KEY}&cx=${CONTEXT_KEY}&g=${term}`
-            )
+            fetch(`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${term}`)
                 .then(response => response.json())
                 .then(result => {
                     setData(result)
@@ -28,3 +25,10 @@ const useGoogleSearch = (term) => {
 };
 
 export default useGoogleSearch;
+
+
+//https://www.googleapis.com/custom-search/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&g=${term}
+
+//  Finally it worked man craziest mistake i made , my bad   i.e, after http:// ........ &g it was not g its q thats it.
+// it took about 2 hrs to find out and i searched entire web  
+
