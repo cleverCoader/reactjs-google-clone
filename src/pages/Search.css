@@ -55,3 +55,8 @@
     background-image: -webkit-linear-gradient(top, #f8f8f8, #f2f2f2);
     color : #222222;
 }
+
+.search_buttonHidden{
+    display: none !important;
+
+}

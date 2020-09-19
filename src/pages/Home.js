@@ -20,20 +20,31 @@ function Home() {
           <Link to="/Gmail">Gmail</Link>
           <Link to="/Images">Images</Link>
           <AppsIcon className="headerRight_icons" />
-          <Avatar className="headerRight_icons" />
+          <Avatar src="https://avatars0.githubusercontent.com/u/71284942?s=460&u=042477abf4c5020157b30e8506b311a02d37f492&v=4" className="headerRight_icons" />
         </div>
       </div>
+
+      
+
+
+
+
 
       <div className="home_body">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google" /> 
               <div className="homeInputContainer">
-                    <Search />
+                    <Search hideButton />
               </div>
               <div className="home_languages">
                   <p>Google offered in: <span className="languages" >hindi, kannada, telugu, tamil, malayalam, marati,spanish, french, chainese</span> </p>
               </div>   
           </div>
           
+      
+
+
+      
+
           <div className="footer">
                 <hr />
                 <p className="home_coutry">India </p>
