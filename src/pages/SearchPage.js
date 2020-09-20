@@ -89,7 +89,9 @@ function SearchPage() {
             {true && (
                  <div className="searchPage_results">
                     <p className="searchPage_resultCount">
-                        {/* About {data?.SearchInformation.formattedTotalResults} results ( {data?.SearchInformation.formattedSearchTime} seconds) */}
+                        //finally found is its again case sensitivity problem i wrote ( SearchInformation ) instead of (searchInformation) i,e first letter 's' capital
+                        {/* About {data?.SearchInformation.formattedTotalResults} results ( {data?.SearchInformation.formattedSearchTime} seconds)   */}
+                        About {data?.searchInformation.formattedTotalResults} results ( {data?.searchInformation.formattedSearchTime} seconds)
                      </p>
                     
                     {data?.items.map((item, i) => (
