@@ -89,7 +89,7 @@ function SearchPage() {
             {true && (
                  <div className="searchPage_results">
                     <p className="searchPage_resultCount">
-                        //finally found is its again case sensitivity problem i wrote ( SearchInformation ) instead of (searchInformation) i,e first letter 's' capital
+        {/*finally found is its again case sensitivity problem i wrote ( SearchInformation ) instead of (searchInformation) i,e first letter 's' capital*/ }
                         {/* About {data?.SearchInformation.formattedTotalResults} results ( {data?.SearchInformation.formattedSearchTime} seconds)   */}
                         About {data?.searchInformation.formattedTotalResults} results ( {data?.searchInformation.formattedSearchTime} seconds)
                      </p>
