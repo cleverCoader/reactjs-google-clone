@@ -1,4 +1,3 @@
-
 export default{
     "kind": "customsearch#search",
     "url": {
