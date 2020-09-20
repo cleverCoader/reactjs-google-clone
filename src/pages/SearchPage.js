@@ -26,11 +26,11 @@ function SearchPage() {
     const [{ term }, dispatch] = useStateValue();     //[{ term }, dispatch]
 
     //Live API call
-    //const { data } = useGoogleSearch(term);
+    const { data } = useGoogleSearch(term);
 
     //Mock API call
 
-    const data = Response;
+    // const data = Response;
     console.log(data);
 
     return (
@@ -86,7 +86,7 @@ function SearchPage() {
             </div>
 
 
-            {true && (
+            {data && (
                  <div className="searchPage_results">
                     <p className="searchPage_resultCount">
         {/*finally found is its again case sensitivity problem i wrote ( SearchInformation ) instead of (searchInformation) i,e first letter 's' capital*/ }
